@@ -1,61 +1,69 @@
 import React from "react";
 import "./Home.css";
+import Navbar from "../Components/Navbar";
 
 const Home = () => {
   return (
     <div className="home_section">
       <div>
         <div>
-          <nav className="navbar navbar-expand-lg">
-            <div className="container">
-              <a className="navbar-brand">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/a6b0/6f12/3cac62d0f253957fb113cf84d865ae99?Expires=1698624000&Signature=CzxAcn5G-4sOuHWNl0r~ckYG58qr9I0GnmpQq07qEc9du5VuF3erfHbgshVc1crvUypgWmORMwN-9wq5WA-GH34gqbvVcPpWHsbSTvEdiSZJpLPksmKhMOgLx7ZTipSVAHQpmry8~5QKnP~NwZLLJ0MKLXDvOPEZj6Zj7sHOLXQZHnhFBVEQtWAd3y-iiH3nI0UOqYu9Ai6sd~2ag8Jwwnk1n0nyAUIxqw6fmLorfl3pDRh4VTaiGbP77mTpkRceJShw6RjtrZc8uP5-tG4FxIGizWgVzzNfbKvqNSJQDVHkQbO8p4pMkktkUwQ3c79yz6g7bGlZSlJw4Z52b7nCiA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                  alt="logo"
-                  className="logo"
-                />
-              </a>
-              <button
-                className="navbar-toggler text-white"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon text-white" />
-              </button>
-              <div
-                className="collapse navbar-collapse"
-                id="navbarSupportedContent"
-              >
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li className="nav-item">
-                    <a className="nav-link text-white head" aria-current="page">
-                      CAR SERVICES
-                    </a>
-                  </li>
-                </ul>
-                <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li className="nav-item">
-                    <a className="nav-link text-white" aria-current="page">
-                      Spares
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-white">Blog</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-white">Login</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-white">Register</a>
-                  </li>
-                </ul>
+          <Navbar />
+        </div>
+
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8 right_section text-white">
+              <h1>Experience The Best Car Services In Hyderabad</h1>
+              <p>We provide Our Services in over 100+ Major Cities also.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                nec egestas ligula. Nulla facilisi. Phasellus faucibus ligula id
+                mauris varius, eget faucibus lorem fringilla. Vivamus ut felis
+                porta, luctus libero eget, feugiat velit. Sed aliquet leo et ex
+                sodales
+              </p>
+              <div className="right_bottom">
+                <div>
+                  <p>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                  <div>
+                    <p>4.7</p>
+                    <p>Based on 100000+ Reviews</p>
+                  </div>
+                </div>
+                <div>
+                  <p>
+                    <i class="fa-solid fa-users"></i>
+                  </p>
+                  <div>
+                    <p>2,50,000</p>
+                    <p>Happy Customers</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </nav>
+            <div className="col-md-4 left_section">
+              <div>
+                <h1>Book your Car Service Now !</h1>
+                <p>Get instant quotes for your car service</p>
+                <div>
+                  <p>Rating</p>
+                  <p>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                  <p>4.7 / 5</p>
+                </div>
+                <div>
+                  <select>
+                    <option value="">Select your Car</option>
+                  </select>
+                  <input type="text" placeholder="Enter your Mobile Number" />
+                </div>
+                <button>Check Prices For Free</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
