@@ -12,6 +12,10 @@
   height: 80px;
   border-radius: 47px;
 }
+.ach {
+  text-decoration: none;
+  color: white;
+}
 
 .head {
   font-family: Alumni Sans Inline One;
@@ -252,4 +256,123 @@ input {
   font-weight: 700;
   color: #001b39;
   margin-top: 25px;
+}
+
+/* comment_section css */
+
+.comment_section {
+  width: 85%;
+  margin: 50px auto;
+}
+
+.comment_section > p {
+  font-weight: 700;
+  color: #001b39;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.comment_section > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.comment_section > div > div {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #eee;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.top > div:nth-child(1) > img {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  border: 1px solid #001b39;
+}
+
+.top > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.top > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 0;
+}
+
+.top > div:nth-child(2) > div:nth-child(2) > p {
+  margin-bottom: 0;
+}
+
+.top > div:nth-child(2) > div:nth-child(2) > div > p {
+  margin-bottom: 0;
+}
+
+.top > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  color: #fbbc04;
+}
+
+.bottom {
+  margin-top: 15px;
+}
+.bottom > p {
+  font-size: 12px;
+}
+
+/* footer_section css */
+
+.footer {
+  padding: 40px 0;
+  background-color: #001b39;
+}
+
+.footer_section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 85%;
+  margin: 50px auto;
+  color: #fff;
+}
+
+.footer_section > div {
+  margin: auto;
+}
+
+.footer_section > div > p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer_section > div > p {
+  cursor: pointer;
+}
+
+/* EndFooter css */
+
+.endFooter {
+  padding: 40px 0;
+  background-color: #282828;
+}
+
+.endfoot {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 85%;
+  margin: 50px auto;
+  color: #fff;
+}
+
+.endfoot > div {
+  margin: auto;
 }

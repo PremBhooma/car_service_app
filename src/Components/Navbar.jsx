@@ -47,8 +47,9 @@ const Navbar = () => {
                   <a className="nav-link text-white">Blog</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white">
+                  <a className="nav-link text-white ach">
                     <Link
+                      className="ach"
                       to={"/"}
                       onClick={() => {
                         localStorage.clear("token");
@@ -72,12 +73,16 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link text-white">
-                    <Link to={"/login"}>Login</Link>
+                    <Link to={"/login"} className="ach">
+                      Login
+                    </Link>
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link text-white">
-                    <Link to={"/signup"}>Register</Link>
+                    <Link to={"/signup"} className="ach">
+                      Register
+                    </Link>
                   </a>
                 </li>
               </ul>
