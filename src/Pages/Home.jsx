@@ -4,6 +4,8 @@ import Navbar from "../Components/Navbar";
 import Head from "../Components/Head";
 import Services from "../Components/Services";
 import Customs from "../Components/Customs";
+import Workshop from "../Components/Workshop";
+import ServiceWork from "../Components/ServiceWork";
 
 var bgColors = { Default: "#fff" };
 
@@ -76,6 +78,20 @@ const Home = () => {
           className="bg"
         >
           <Customs />
+        </div>
+      </div>
+
+      <div className="workshop_section">
+        <p>Choose the workshop Near You</p>
+        <div>
+          <Workshop />
+        </div>
+      </div>
+
+      <div className="service_work">
+        <p>How Car Service Works ?</p>
+        <div>
+          <ServiceWork />
         </div>
       </div>
     </>
