@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../Pages/Home.css";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Routes/AuthContext";
 
 const Navbar = () => {
+  const { token, setToken } = useContext(AuthContext);
   return (
     <>
       <nav className="navbar navbar-expand-lg">
@@ -33,26 +35,53 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link text-white" aria-current="page">
-                  Spares
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white">Blog</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white">
-                  <Link to={"/login"}>Login</Link>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white">
-                  <Link to={"/signup"}>Register</Link>
-                </a>
-              </li>
-            </ul>
+
+            {token ? (
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <a className="nav-link text-white" aria-current="page">
+                    Spares
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link text-white">Blog</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link text-white">
+                    <Link
+                      to={"/"}
+                      onClick={() => {
+                        localStorage.clear("token");
+                        setToken(null);
+                      }}
+                    >
+                      Logout
+                    </Link>
+                  </a>
+                </li>
+              </ul>
+            ) : (
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <a className="nav-link text-white" aria-current="page">
+                    Spares
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link text-white">Blog</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link text-white">
+                    <Link to={"/login"}>Login</Link>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link text-white">
+                    <Link to={"/signup"}>Register</Link>
+                  </a>
+                </li>
+              </ul>
+            )}
           </div>
         </div>
       </nav>

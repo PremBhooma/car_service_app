@@ -1,0 +1,39 @@
+.bg {
+  background-image: url("../images/Rectangle14.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.formCSS {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 25%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 8px 2px #001b39;
+}
+
+.formCSS > input,
+button {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.formCSS > button {
+  border: none;
+  background-color: #001b39;
+  color: white;
+  font-weight: 600;
+}
+
+.formCSS > button:hover {
+  background-color: #023d82;
+  color: white;
+}
