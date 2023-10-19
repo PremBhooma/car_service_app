@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../Pages/Slot.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Payment = () => {
   const [data, setData] = useState([]);
@@ -80,9 +81,27 @@ const Payment = () => {
         <p>CAR SERVICE</p>
       </div>
 
+      <div className="welMes">
+        <p>Welcome to Payment for your Car Service.</p>
+        <p>
+          Slot Book offers a convenient and user-friendly platform for booking
+          your car service. Our commitment to providing a seamless experience
+          extends to the payment process, which is made even more hassle-free
+          through our partnership with Razorpay. With a secure and efficient
+          payment gateway like Razorpay, you can rest assured that your
+          transactions are handled with the utmost professionalism and security.
+        </p>
+      </div>
+
       {change ? (
         <div className="succes">
-          <p>Payment Success</p>
+          <img
+            src="https://www.beauty-addict.com/wp-content/uploads/2021/02/Payment-success.png"
+            alt=""
+          />
+          <button>
+            <Link to={"/"}>Back to Home</Link>
+          </button>
         </div>
       ) : (
         <div className="paySlot">
@@ -102,6 +121,12 @@ const Payment = () => {
           ))}
         </div>
       )}
+
+      <div className="payFoot">
+        <div>
+          <p>©2023 Car Service, Inc.</p>
+        </div>
+      </div>
     </>
   );
 };

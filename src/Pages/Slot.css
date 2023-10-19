@@ -76,8 +76,80 @@
   margin-bottom: 5px;
 }
 
+.paySlot > div:nth-child(2) > button {
+  background-color: #001b39;
+  color: white;
+  font-weight: 500;
+  border: none;
+  width: 100%;
+  margin-top: 15px;
+}
+
 .succes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.succes > img {
+  width: 600px;
+  height: 400px;
+}
+
+.succes > button {
+  border-radius: 8px;
+  border: none;
+  background-color: #001b39;
+  font-weight: 600;
+}
+
+.succes > button > a {
+  color: white;
+  text-decoration: none;
+}
+
+.succes > button:hover {
+  background-color: #4ea812;
+}
+
+.welMes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  padding: 20px;
+  width: 85%;
+  margin: 50px auto 20px auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.welMes > p:nth-child(1) {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.bok {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.payFoot {
+  background-color: #282828;
+  margin-top: 40px;
+}
+
+.payFoot > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.payFoot > div > p {
+  color: white;
 }

@@ -44,6 +44,21 @@ const Slot = () => {
         <p>CAR SERVICE</p>
       </div>
 
+      <div className="welMes">
+        <p>Welcome to Slot Book for your Car Service.</p>
+        <p>
+          Slot Book offers a convenient and user-friendly platform for booking
+          your car service. Our commitment to providing a seamless experience
+          extends to the payment process, which is made even more hassle-free
+          through our partnership with Razorpay. With a secure and efficient
+          payment gateway like Razorpay, you can rest assured that your
+          transactions are handled with the utmost professionalism and security.
+        </p>
+      </div>
+      <div className="bok">
+        <p>Slot Book Form</p>
+      </div>
+
       <div className="slot">
         <div>
           <img
@@ -70,6 +85,12 @@ const Slot = () => {
           onChange={(e) => setPrice(e.target.value)}
         />
         <button onClick={handleSubmit}>Submit</button>
+      </div>
+
+      <div className="payFoot">
+        <div>
+          <p>©2023 Car Service, Inc.</p>
+        </div>
       </div>
     </>
   );
