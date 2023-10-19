@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Login from "../Pages/Login";
 import Signup from "../Pages/Signup";
 import Slot from "../Pages/Slot";
+import Payment from "../Components/Payment";
 
 const AllRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AllRoutes = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/slot" element={<Slot />} />
+        <Route path="/payment" element={<Payment />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,83 @@
+.headSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 85%;
+  margin: 50px auto;
+}
+
+.headSection > div > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 47px;
+}
+
+.headSection > p {
+  font-family: Alumni Sans Inline One;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18.4px;
+  letter-spacing: 0.169px;
+}
+
+.slot {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 25%;
+  margin: auto;
+}
+
+.slot > div > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.slot > input {
+  padding: 8px;
+}
+.slot > button {
+  padding: 8px;
+  border: none;
+  background-color: #001b39;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.slot > button:hover {
+  background-color: #033f83;
+}
+
+.paySlot {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 25%;
+  margin: auto;
+}
+
+.paySlot > div:nth-child(1) > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.paySlot > div:nth-child(2) {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.paySlot > div:nth-child(2) > p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.succes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
