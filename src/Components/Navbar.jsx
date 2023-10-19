@@ -41,7 +41,7 @@ const Navbar = () => {
                 <li className="nav-item">
                   <a className="nav-link text-white" aria-current="page">
                     <Link to={"/slot"} className="ach">
-                      Slot
+                      Slot Book
                     </Link>
                   </a>
                 </li>
@@ -68,7 +68,7 @@ const Navbar = () => {
                 <li className="nav-item">
                   <a className="nav-link text-white" aria-current="page">
                     <Link to={"/slot"} className="ach">
-                      Slot
+                      Slot Book
                     </Link>
                   </a>
                 </li>
