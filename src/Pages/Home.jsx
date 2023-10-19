@@ -25,6 +25,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <p>Helloooooooooo</p>
       <div className="options_section">
         <p>
           <a href="#">Our Services</a>
