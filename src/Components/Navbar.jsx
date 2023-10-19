@@ -40,7 +40,9 @@ const Navbar = () => {
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <a className="nav-link text-white" aria-current="page">
-                    Spares
+                    <Link to={"/slot"} className="ach">
+                      Slot
+                    </Link>
                   </a>
                 </li>
                 <li className="nav-item">
@@ -65,7 +67,9 @@ const Navbar = () => {
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <a className="nav-link text-white" aria-current="page">
-                    Spares
+                    <Link to={"/slot"} className="ach">
+                      Slot
+                    </Link>
                   </a>
                 </li>
                 <li className="nav-item">
