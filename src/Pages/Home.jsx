@@ -75,7 +75,7 @@ const Home = () => {
         <div
           style={{
             background: bgColors.Default,
-            gridTemplateColumns: "repeat(5, 1fr)",
+            // gridTemplateColumns: "repeat(5, 1fr)",
           }}
           className="bg"
         >

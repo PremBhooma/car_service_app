@@ -404,4 +404,31 @@ input {
   .blocks_sections {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  /* curated section */
+  .workshop_section > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* service work section */
+  .service_work > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* comment section */
+  .comment_section > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* footer section */
+  .footer_section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .endfoot {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+    text-align: center;
+  }
 }
