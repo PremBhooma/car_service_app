@@ -1,18 +1,38 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 const Customs = () => {
+  const [item, setItem] = useState([]);
+
+  const getData = async () => {
+    try {
+      const res = await axios.get(
+        "https://kv-varlu.vercel.app/api/v1/curated/all"
+      );
+      const data = res.data;
+      console.log(data.categories);
+      setItem(data.categories);
+    } catch (err) {
+      console.log(err);
+      console.log("Failed to Get Curated");
+    }
+  };
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <>
-      <div>
-        <div>
-          <img
-            src="https://s3-alpha-sig.figma.com/img/6c1d/9fbb/58d7a447f2363d4e9d0a749587787d64?Expires=1698624000&Signature=hrIMgT4pOE9O2p4xKZJh1TMxBCG0Yg03f0~8~05GQB0vBizsXX8sKE4dskNJ6fm9NkR8fK5BJGRoPhkH7vXYqi~uYYW-HReIsheQKjpipAcGLmPkcbxz1Mlo5OEDukYfD8DQ~eX9UyxyAX~lITSMhlzb4S0ZKhUyAzlddfXVVEqGVnGDyA-9huSCi7Ny4rifSrLpRKZj2tvxCORqTgsJ95ZTNXXiYGOL5MGOyNl693VB5lpQRV4WoTOgrqbeT7gxlRi-9rVte98bjcW33Zy2WfNcc9jMyS8ql8RVlo046aoG99kLZMAdXi0eFtRRL0l7m4heJUTJozeLaEDgofv-oA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-            alt="car"
-          />
+      {item?.map((elem) => (
+        <div key={elem._id}>
+          <div>
+            <img src={elem.image} alt={elem.name} />
+          </div>
+          <p className="imgTitle">{elem.name}</p>
         </div>
-        <p className="imgTitle">Batteries</p>
-      </div>
-      <div>
+      ))}
+
+      {/* <div>
         <div>
           <img
             src="https://s3-alpha-sig.figma.com/img/91f9/6626/38a5de95ad5bb0a649512b5b43efb39d?Expires=1698624000&Signature=jA52ffdt1URHdFlvYCFHg9ajm~ZN~P-1fMHlk5s1YhKMb17iBAMIfR5KLXDdM22CUg2RBhuFy9qK4RB9qE9uLcnnH7d0FTZ1Dj7mkppxUtdOmio7la~CkI4b2QtXbB1P5sXhGz4sslrNye~MJ7DIBLFnq-QPhs15J54EjpRS8mt6n1eAX-ZturUD4fEzwn2GVgxtboKmNPF0qE4FlEDOfu06yGnRL-uBz0id-Zi7ln~MvRuIxY4RFNFBHJ9Vr1jDdRMQhYbgJblSlkZXvo0R7QG5kpnY8N1NiRgB27f3gETqLk4RW8GXymYKvuf1M8AhXMmoTRGe88cS1z57cgtLAA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
@@ -130,7 +150,7 @@ const Customs = () => {
           />
         </div>
         <p className="imgTitle">Side Mirror</p>
-      </div>
+      </div> */}
     </>
   );
 };
