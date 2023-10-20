@@ -1,15 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 const Services = () => {
+  const [item, setItem] = useState([]);
+
+  const getData = async () => {
+    try {
+      const res = await axios.get(
+        "https://kv-varlu.vercel.app/api/v1/category/all"
+      );
+      const data = res.data;
+      console.log(data.categories, "12");
+      setItem(data.categories);
+    } catch (err) {
+      console.log(err);
+      console.log("Failed to Get Categories");
+    }
+  };
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <>
-      <div>
-        <div>
-          <img src="https://i.postimg.cc/Fs8r3F3g/svgg.png" alt="car" />
+      {item?.map((elem) => (
+        <div key={elem._id}>
+          <div>
+            <img src="https://i.postimg.cc/Fs8r3F3g/svgg.png" alt="car" />
+          </div>
+          <p className="imgTitle">{elem.name}</p>
         </div>
-        <p className="imgTitle">Periodic Service</p>
-      </div>
-      <div>
+      ))}
+
+      {/* <div>
         <div>
           <img src="https://i.postimg.cc/Fs8r3F3g/svgg.png" alt="car" />
         </div>
@@ -76,7 +99,7 @@ const Services = () => {
           <img src="https://i.postimg.cc/Fs8r3F3g/svgg.png" alt="car" />
         </div>
         <p className="imgTitle">Car Inspection</p>
-      </div>
+      </div> */}
     </>
   );
 };
