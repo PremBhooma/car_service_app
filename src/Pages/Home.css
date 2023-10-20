@@ -376,3 +376,32 @@ input {
 .endfoot > div {
   margin: auto;
 }
+
+/* Media Queries */
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+  /* Home Section */
+  .home_section {
+    height: 940px;
+  }
+  .left_section > div {
+    display: none;
+  }
+
+  /* options section */
+  .options_section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  /* services section */
+  .services_section > div:nth-child(2) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 20px;
+  }
+  /* block section */
+  .blocks_sections {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
