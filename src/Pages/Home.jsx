@@ -68,17 +68,11 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="services_section">
+      <div className="curated_section">
         <div>
           <p>Curated Custom Services</p>
         </div>
-        <div
-          style={{
-            background: bgColors.Default,
-            // gridTemplateColumns: "repeat(5, 1fr)",
-          }}
-          className="bg"
-        >
+        <div className="bg1">
           <Customs />
         </div>
       </div>
