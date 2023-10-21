@@ -1,6 +1,8 @@
 import React from "react";
 import ComponentsNav from "../Components/ComponentsNav";
 import "./Blog.css";
+import Footer from "../Components/Footer";
+import EndFooter from "../Components/EndFooter";
 
 const Blog = () => {
   return (
@@ -262,15 +264,238 @@ const Blog = () => {
               </div>
             </div>
           </div>
+
+          {/* left Side Article */}
+
           <div className="left_article">
             <div className="title">
               <p>Today's Article</p>
             </div>
 
-            <div className="left_cards"></div>
+            <div className="left_cards">
+              <div>
+                <div>
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/98bd/a86a/9fc6e38134a1048728497fcd893426ff?Expires=1698624000&Signature=Hcx-6j2-dYQcLN7a5LTWiRowbWym0KxJKjkQLnbF7Kyba7hisdOYPV2fgCkE8LFOkJdVJhWsJQbV6IW6XNXWSS8~LElCuc4UM8eI28ejiBjP2n0fWNM-bNJVZEs4HsYP~n65u9OaECM0E9pEic5kpHoPvFnBbjjAEqKrNouMuxUsgegZNLxgbjJjqGto~lMOvtXJwFWfpaBSvJkOyFbN~XXKJ4Z8Od2GjNWWqvTeSlWmMucLah8F0zgMIrCHlH10m7~9v00MdwarzVL-qGgTIeJYajBYlkCdAvyuVIGjwlsfASTSUMIjTGCzUh4YRlBmCkjid8uOMQ8e~d1litt8Ag__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="title mb-1">Lorem Ipsum</p>
+                  <p>
+                    Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/a120/58d2/2aa202dd2171f169c44134920336377a?Expires=1698624000&Signature=GXWU8wckGZEUyvtAkqCnilxHNmFKqthlorNR1Gokt-Kc~K09mf9TImXEB3ZokjFa6EpOrXqMcR7HJ4vMWQanW1UGp9v7xutki0E0IQ8RYe6taGJ2eY8aSEHJVtjkez5D6Gtf~ohI4nzHg4iZOv69Hp6rfs6daUU2Kuzzw6btP89EerW-4zDET-H2R7uMTmbNYORXOxLfHecQyFWGUcVJmf8BCBJ0AOZx9wrPhxR3viC0ywRM2nOp8immT~sRmpSQnC4l1Ul8YT2G4M-MWPpjGuvWsp2qVwhS4YGjxbrY3qglglrwQlGxV96gGT25VisJkh1GDi~PU-yxY0tpFoaosQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="title mb-1">Lorem Ipsum</p>
+                  <p>
+                    Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/12ac/02ad/3225c1a8a65eb61802500dde16ba1ea2?Expires=1698624000&Signature=LlW1nLW26yqTJNk19MZGhryUPmSHZqULdI5hakz8~2kkIgRrXloEK4a~qLp3H7FIsKw6lF90f9H5iEi5p0cYTGsCxslF5LC~b2QjRpybWOA4Rx1TLFIkPDOzViCZcKN2z7-HgIzWNrBMyhjvS4LEaXxOD5IFkE-QEdOkkCZYP6ZyPuh8onaMoAQda1kQKvgjsvOhjXNgQO-S~nPWYM6kvBXi5JKEDkN8Cly9GGVgMxFslNkrMkENn4qFbgq7~MQmq35md6Fs1vwj3YEW2-TErLuDwItEdxCSutiHGhz-q7kNgsWiUhdOVpX4t4Lww6IWLZjvBY0X2T5KTWZttMFgJA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="title mb-1">Lorem Ipsum</p>
+                  <p>
+                    Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/ec75/0efa/e2e570542d3386b5ed568ca3086ee620?Expires=1698624000&Signature=excmsxoE564nbkHtHG6NTe81BwAlz1TgvKaG1OsgcpDAGbXpY~hkQmGY~j9Xjcw2shJCR1VtS9cRDTlqbcVuXiNHxypY25g2V3my4BFa35CkBqR~-Xcs3nX5KTfKV-MtZsP2UtTHM6MJA7pHyiXXeU4bLx7pM-zcIPO7adGXKUK0wv971IC5QnUoPIYjJH8k1OZ7IX4suQa8XwkHleIm6rsZqRhd-p44UKVgVPexNP2KDGSAr1xhc2KhypZ3pEimJZKPaH169rWPOpEdlhZ7-Q5SAfYWc-3N4DiThqcNwFt7crFLLYsc-OK75GDR5BfbHAvN8xeVKPKZqeivh-zsJw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="title mb-1">Lorem Ipsum</p>
+                  <p>
+                    Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/1f4a/1944/7ba99bf6e4f9e6b0cb1f634eeb8ce5c8?Expires=1698624000&Signature=LpvMhwpPKZsE8cpErevJO6dI19iLYkwPnsiouEN~qxiJKsQiBYXikRwU1LzCxuFgqf5g1SLTU2dvZSp7LtzNpNNqTQfLODLG3UE8JX9j5uBRpcbmLD0aJCq51EFBbfOQOxYaS~m-W0h5RZqKybYZrQv1paUg-7gjHtA5Qs8EeHvVeudpdl3aHjNPrL-lL90YwT~VleoaYNmxnno-ncz30P26iV~WANPZE-3ZBtx9jyBwmYCruILGYwq4RpxfXl~Emb7eyXM3IVWi0B-8SoImwjkJQIVq5nc0i9sWA8S3m0B7Llyss6A0pEgHJSOeU6Fxc1yPHK2asukNoSFYrekyIA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="title mb-1">Lorem Ipsum</p>
+                  <p>
+                    Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/8b99/8ff9/ebd9114a565f704fa0067eb4fe176e09?Expires=1698624000&Signature=kDEJc7SYgBcD5aBJXJsPv5kPhTLIJz9S~6YbR2nWNTdwVZPd3sHLg5ing-wXU7fA6epeum8NShQQVelTRYo1jcLaVRC7X2K6jlt~j3aKNCVlSyvGAAcWuvGqi5q-lv8ptgXbSC7Vuycp50EemuzCwOw0fSFnFwemSv2-zAoDgo9a7m0nVZIglcK16HUSIp51GizKKoCur-SszlV5GLu4GzEGmZbseW1tSh18JsprG3OrPzAfyAcgVzfS0omW8wZ4kY~FjJhPXHfQwDqEPXUEMMiERC8d3USdezJI-lT~QP5etjt-YaSnJFXjhgMDZgQbvb8aCNM155QZijAI1-WdUQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="title mb-1">Lorem Ipsum</p>
+                  <p>
+                    Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/28fa/b763/69c50e37a7d61e8a8c9fc556dda763bd?Expires=1698624000&Signature=CQc6NygwVZ71Dq7-66yIr-WjR~HR0OvqrCFqlvej8If6Nkmtsg1SLAuUsceEZXL1Di6oA5mTj6vWg8nMvka9HxYzcG7NPFELIVCOqOnOdaDBz3bcHnfk5~t6bYhCiQmVi9ztR1vci5A5wOa-MVG4Xmu9ox6-PTBhq~7ZA8mQmYuFu15eKLnF-sT1uho81mp0-u0L7oRgsD-1PnmwLFNEh2pImj3aOAc2IDleA1smwRYlJ-d~RZRbsHBry9m5XppK1NHFLUw2peF7GksuE1J5VCqmZt1qhxWEHF62puls30Yhj5Fa4UT21nNXAaHnrEmmM2dszn~6ZaKGif9oDMoZjw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="title mb-1">Lorem Ipsum</p>
+                  <p>
+                    Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/40c8/2232/ed7f98f5a2d7de3626daf028211b2dc4?Expires=1698624000&Signature=pnRtb6ChAeWT7q3~iCiFyn6NJiG9hXoQftyZDU9VulVgGM8B9MeDsOzJQRQ-ZHe4acuV8JC85rhAt3Hj5yn9VGblQ~De6vCAIKdMLffiNrkP61dIa8FkudGCA2M5pmmBUW3mc6T1NYsDmEhO7nNOXHnhAroaFV7vxHqDXdWKTUl9kRytMeteCfM6dQn~BNmCVz3nGwib5Xh5ltzLQ5-RccV5zCoIvKSGf0UrqG9dhVDXreogDch4wSDac5Y7wuFuBDYrOr87MTX-md~jxk~QLPW04nH8NucEuOOwyZ5KvDr-76Cv7jJTOqWlM65AmDoEu8go1HoG72lfSW6RGq56WQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="title mb-1">Lorem Ipsum</p>
+                  <p>
+                    Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/98af/d282/9eb162f9ea1ef5f99d6fceb7fad3e7e3?Expires=1698624000&Signature=EpZdD-MlK7VuzmxOqNcCauGZcShs9SPngqxtrlacRwUssw4D8w9eFQOJCsPJjaMsN2YTJWlza5gEsrsKoQmSxfqDp-1QCN0Cuw13lX~-B24mRlWgCHj4F4nD1RkQGMorSoV7Mn1OK93W~GGWjCH4754JGwONQD1lXwHd8mgZujY8WrK1YonpyNyczkNoz12FayxWw6RdVgnQ43coTca5z4IMCv~8FsDOZKqlkb2zG6wRn~fGIA9h9xc3kaMIEjHtVFxcttDcMR6H~SQ6ZKJPtlV~7y1Vi6OG1q6Pvu7REDHSffJ5j-9RJPR~1HC9fsr3uqVyGG7kV018pjz05p4iDQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="title mb-1">Lorem Ipsum</p>
+                  <p>
+                    Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/f987/efb4/3d09d4158ca305a624b765601463cc04?Expires=1698624000&Signature=d3eaCqygxKtWSwI0akjpW5aaDcRI7yZ~8pYtofJW9urpKB5uGMBvT2mXU2KQVxzhJW0ZtW6jF1GVA04UB476FriMKqi4zsXTahd6SJWO2yAQUIlL6QiMZwBTJnTHP8xZOeBiD0-xHip2AprssMVuQQ9q6w2Q~m9D7fWOjW1CvHxxuRLWiOT72rXm8XWcDvCPEjuDuLLojiFoCcJg3Yzgc7~ZRbgg7yFDcvp7IPNYQ5uEbE7nJ~YsREPqVfrGg8JyctIHGdy0g9mVByfJaJA6UTWfzoit6~cRb5wp8jh33QoLqtFS0YfXgFJDdd-rrBMNJ2LCdmZWGSFMoZHwnnA9lQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="title mb-1">Lorem Ipsum</p>
+                  <p>
+                    Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/c625/88d2/d63425b6dd5d4aae4081f001ea73431b?Expires=1698624000&Signature=jBObPwdDATOr383BpgEInmsLxcY~VNsRPiDy9kRowh1vpav35KFHJ5z7GbYfwHkjGDHoryoBSF~brAD-seKTwDVIel-kvaGcCQlSnbWrGAbjzim3NFB1o9UVTZMMLSiBxJAiiAqoMDpmTsVtVedcEm1glblgCAT-8Rf-i7N6VLpxkJO~p~95ZfEbyC3p5LGEdLPl27HhlCB2slzocf5is4~phbvaRjP8Eb9W~zt76ucaxLN8HRes3jnUFNUIqioIj15ieT57nFUJDicQNvuHAtZjrS7i-NOpwDu8dHg3mlVMqMHHQ0k4--6eJ9PfrvElpFU2pvXCB9CyOeQcISmcRQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="title mb-1">Lorem Ipsum</p>
+                  <p>
+                    Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/97bf/9c5b/fd48d90ecc01e46ea48e010d436f92da?Expires=1698624000&Signature=Uj1hFoVfLxrY3cBwbOLMFM6ouLJA-usfGUQdxOvKgL-KXXgl~DS9gGxb3CVgvzS6WHrFrqpY1nkdDIJaGrv9D2rqwxRKs8CKRfDoXDonWfD5U2esUoWnQGilrtAPQUXJg7dSIOEz4a2pb60dfM6eYNhlZum53mZ8X8NFaPMzrgAWBd~SzTopwl9OIlqwWfeUlWLGPHOqz9bOivjEiuIiPD98EgM5DZkY1aT5HgRNhyksYgbqVa7nOK1KZCfoTi2CfxeWUgcTjsZ7b6SBWYNazYAr24zfj3Y1nHcXRth3EyNed-4M2KevVWVvXIJxbC4iKX~NnxI~EYU7frI1s4JSkA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="title mb-1">Lorem Ipsum</p>
+                  <p>
+                    Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/9321/b995/ad15dcafb9ddfb10f294b270cd7eaefe?Expires=1698624000&Signature=ZBjGws~G4ap7tBrac6ZB2QsAKVbPo9uHBJV2ibyIG08VmNy~W357yP7Ih~INUkGEDeHpMklbdAZhnmzqJ3MdPubmO4XbQm~~rwXnntAPFFz5dqgNxbdMs7Ebm2iagwtm68BQtl22KsHlHnowR2csoVtQuOPxD7QPPiK~lAksPCwrRmeL7bSsNY1~SFZY5KG1wuobuNP8VH~nbSRh375wizOfJcKC~Ysl5HaVKxsE92ZXmoF7ZZx4mqzTHBYZ6zCIrjEuLIfXLahZC63YztNrWCmo63PutGjnzH0G2-rXx9napX6cN5oZvmHv93XbHFxtHZhqZJ7r~6EB9uyS4qnK7g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="title mb-1">Lorem Ipsum</p>
+                  <p>
+                    Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/9a15/5d62/590b31db5c0f78d2224f49745c16e399?Expires=1698624000&Signature=FBO-1IQTVhAtO7-CHJa56-Hx71TJkNkJy50fqsFSmpFF0wWMX78UVmaWKFBhfnw4-NanVgGZ3rG93X74~aLJULVhwZG~Oz6Txlc9fH2ofU9eu4uNX-OcredC-z3pSZogVcX4EbB1npWAmXVty-CpQfnn5hc8XQFTQqBVvNqdPiocKbB8vwo3xutZx8QKLGkTewEpzGLaRemGVFkJ09RrfuPLE1zLnCXg63j04Ej7K61VuFksP8K1SQgAAoxARGtsX56H~wTDZ6Iu57A~578UDLJYTYb~pIsaJLI70VukXrlmGsteqWnmH7eIrSNxiS4x4RsZ-EOeIHx9y0Z3cubacQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="title mb-1">Lorem Ipsum</p>
+                  <p>
+                    Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
+      <div className="footer">
+        <Footer />
+      </div>
+
+      <div className="endFooter">
+        <EndFooter />
+      </div>
     </>
   );
 };
