@@ -39,14 +39,78 @@ const Navbar = () => {
             {token ? (
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link text-white" aria-current="page">
+                  {/* <a className="nav-link text-white" aria-current="page">
                     <Link to={"/slot"} className="ach">
                       Slot Book
+                    </Link>
+                  </a> */}
+                  <a className="nav-link text-white" aria-current="page">
+                    <Link to={"/#"} className="ach">
+                      Spares
                     </Link>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white">Blog</a>
+                  <a className="nav-link text-white">
+                    <Link to={"/blog"} className="ach">
+                      Blog
+                    </Link>
+                  </a>
+                </li>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle1 text-white"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    More
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        <Link to={"/faq"} className="ach text-dark">
+                          FAQ
+                        </Link>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        <Link to={"/contact"} className="ach text-dark">
+                          Contact Us
+                        </Link>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        <Link to={"/terms"} className="ach text-dark">
+                          Terms
+                        </Link>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        <Link to={"/privacy"} className="ach text-dark">
+                          Privacy
+                        </Link>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        <Link to={"/offers"} className="ach text-dark">
+                          Offers
+                        </Link>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        <Link to={"/reviews"} className="ach text-dark">
+                          Reviews
+                        </Link>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link text-white ach">
@@ -66,15 +130,80 @@ const Navbar = () => {
             ) : (
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link text-white" aria-current="page">
+                  {/* <a className="nav-link text-white" aria-current="page">
                     <Link to={"/slot"} className="ach">
                       Slot Book
+                    </Link>
+                  </a> */}
+                  <a className="nav-link text-white" aria-current="page">
+                    <Link to={"/#"} className="ach">
+                      Spares
                     </Link>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white">Blog</a>
+                  <a className="nav-link text-white">
+                    <Link to={"/blog"} className="ach">
+                      Blog
+                    </Link>
+                  </a>
                 </li>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle1 text-white"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    More
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        <Link to={"/faq"} className="ach text-dark">
+                          FAQ
+                        </Link>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        <Link to={"/contact"} className="ach text-dark">
+                          Contact Us
+                        </Link>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        <Link to={"/terms"} className="ach text-dark">
+                          Terms
+                        </Link>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        <Link to={"/privacy"} className="ach text-dark">
+                          Privacy
+                        </Link>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        <Link to={"/offers"} className="ach text-dark">
+                          Offers
+                        </Link>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        <Link to={"/reviews"} className="ach text-dark">
+                          Reviews
+                        </Link>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
                 <li className="nav-item">
                   <a className="nav-link text-white">
                     <Link to={"/login"} className="ach">
