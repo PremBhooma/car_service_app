@@ -1,0 +1,39 @@
+.term_section {
+  width: 95%;
+  margin: 50px auto;
+}
+
+.title {
+  color: #001b39;
+  font-size: 32px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0.113px;
+  margin-bottom: 30px;
+}
+
+.sub-title {
+  color: #001b39;
+  font-family: Poppins;
+  font-size: 18.003px;
+  font-weight: 700;
+}
+.sub-pag {
+  color: #282828;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* footer css */
+.footer {
+  padding: 40px 0;
+  background-color: #001b39;
+  margin-top: 150px;
+}
+
+.endFooter {
+  padding: 40px 0;
+  background-color: #282828;
+}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const [item, setItem] = useState([]);
@@ -26,9 +27,13 @@ const Services = () => {
       {item?.map((elem) => (
         <div key={elem._id}>
           <div>
-            <img src="https://i.postimg.cc/Fs8r3F3g/svgg.png" alt="car" />
+            <Link to={"/Category"}>
+              <img src="https://i.postimg.cc/Fs8r3F3g/svgg.png" alt="car" />
+            </Link>
           </div>
-          <p className="imgTitle">{elem.name}</p>
+          <Link to={"/Category"}>
+            <p className="imgTitle">{elem.name}</p>
+          </Link>
         </div>
       ))}
 

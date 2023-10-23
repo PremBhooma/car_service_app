@@ -12,6 +12,7 @@ import Terms from "../Pages/Terms";
 import Privacy from "../Pages/Privacy";
 import Offers from "../Pages/Offers";
 import Reviews from "../Pages/Reviews";
+import Category from "../Pages/Category";
 
 const AllRoutes = () => {
   return (
@@ -30,6 +31,7 @@ const AllRoutes = () => {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/offers" element={<Offers />} />
         <Route path="/reviews" element={<Reviews />} />
+        <Route path="/category" element={<Category />} />
       </Routes>
     </div>
   );
