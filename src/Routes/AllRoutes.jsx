@@ -13,6 +13,9 @@ import Privacy from "../Pages/Privacy";
 import Offers from "../Pages/Offers";
 import Reviews from "../Pages/Reviews";
 import Category from "../Pages/Category";
+import SingleBlog from "../Pages/SingleBlog";
+import Checkout from "../Pages/Checkout";
+import AddToCart from "../Pages/AddToCart";
 
 const AllRoutes = () => {
   return (
@@ -32,6 +35,9 @@ const AllRoutes = () => {
         <Route path="/offers" element={<Offers />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/category" element={<Category />} />
+        <Route path="/singleblog" element={<SingleBlog />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/addtocart" element={<AddToCart />} />
       </Routes>
     </div>
   );

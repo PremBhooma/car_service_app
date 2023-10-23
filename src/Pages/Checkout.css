@@ -1,0 +1,241 @@
+.checkout_section {
+  width: 95%;
+  margin: 50px auto;
+}
+.checkout_title {
+  color: #001b39;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.18px;
+}
+
+.checkout_box {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.checkout-right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 70%;
+}
+.checkout-right > p {
+  color: #001b39;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.18px;
+}
+.D_T {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.D_T > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 119px;
+  height: 102px;
+  border-radius: 20px;
+  border: 1px solid #e7e7e7;
+  background: #e7e7e7;
+}
+.D_T > div > p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.18px;
+  margin-bottom: 0;
+}
+
+.T_S {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 60%;
+}
+
+.T_S > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 173px;
+  height: 52px;
+  border-radius: 20px;
+  border: 1px solid #e7e7e7;
+  background: #e7e7e7;
+}
+
+.T_S > div > p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.18px;
+  margin-bottom: 0;
+}
+
+/* checkout left */
+.checkout-left {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 30%;
+}
+
+.checkout-left > p:nth-child(1) {
+  color: #001b39;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.18px;
+}
+.checkout-left > p:nth-child(2) {
+  color: #0da500;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.18px;
+  text-align: center;
+}
+
+.Std_Service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  border-radius: 20px;
+  background: #e7e7e7;
+  padding: 14px 16px;
+}
+.Std_Service > p {
+  margin-bottom: 0;
+}
+
+.Std_Service > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.Std_Service > div > p {
+  margin-bottom: 0;
+}
+
+.crle {
+  background-color: #001b39;
+  color: white;
+  padding: 0px 8px;
+  border-radius: 5px;
+}
+
+.checkout-left > button:nth-child(4) {
+  color: #001b39;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  border-radius: 20px;
+  border: 2px dashed #001b39;
+  background: #e7e7e7;
+}
+
+.B_D > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.B_D > p {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.B_D > div > div > p {
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.checkout-left > button:nth-child(6) {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  border-radius: 20px;
+  background: #001b39;
+}
+
+/* footer css */
+.footer {
+  padding: 40px 0;
+  background-color: #001b39;
+  margin-top: 150px;
+}
+
+.endFooter {
+  padding: 40px 0;
+  background-color: #282828;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .checkout_box {
+    flex-direction: column;
+  }
+  .checkout-right {
+    width: 100%;
+  }
+  .T_S {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .checkout-left {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .checkout_box {
+    flex-direction: column;
+  }
+  .checkout-right {
+    width: 100%;
+  }
+  .T_S {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .checkout-left {
+    width: 100%;
+  }
+}

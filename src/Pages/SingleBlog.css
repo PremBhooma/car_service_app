@@ -1,0 +1,141 @@
+.Banner > img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.single-article {
+  width: 95%;
+  margin: 50px auto;
+}
+
+.title {
+  color: #001b39;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.113px;
+}
+
+.single-box {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.right-blog {
+  width: 70%;
+}
+
+.video-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  gap: 20px;
+}
+
+.video-blog > p {
+  color: #001b39;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18.003px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.18px;
+  margin-bottom: 0;
+}
+
+.video-blog > div > img {
+  width: 100%;
+  height: 307px;
+}
+
+.left-blog {
+  width: 30%;
+}
+.vl {
+  border-left: 1px solid green;
+  height: 100%;
+  float: left;
+}
+
+.left_cards > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 0px;
+}
+
+.left_cards > div > div:nth-child(1) > img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* footer css */
+.footer {
+  padding: 40px 0;
+  background-color: #001b39;
+  margin-top: 150px;
+}
+
+.endFooter {
+  padding: 40px 0;
+  background-color: #282828;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .Banner > img {
+    height: 350px;
+  }
+  .single-box {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .right-blog {
+    width: 100%;
+  }
+  .video-blog > div > img {
+    height: 260px;
+  }
+  .left-blog {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .single-box {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .Banner > img {
+    height: 340px;
+  }
+  .right-blog {
+    width: 100%;
+  }
+  .left-blog {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .right-blog {
+    width: 65%;
+  }
+  .left-blog {
+    width: 35%;
+  }
+  .left_cards > div {
+    margin-bottom: 10px;
+  }
+  .left_cards > div > div:nth-child(1) > img {
+    height: 130px;
+  }
+}
