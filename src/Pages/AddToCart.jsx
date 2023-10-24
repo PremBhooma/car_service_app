@@ -562,7 +562,7 @@ const AddToCart = () => {
       </div>
 
       <div className="atc-comment">
-        <div className="comment_section">
+        <div className="comment_section1">
           <p>Recent Review & Rating on Periodic Services</p>
           <div>
             <Comments />

@@ -3,6 +3,7 @@ import ComponentsNav from "../Components/ComponentsNav";
 import "./Blog.css";
 import Footer from "../Components/Footer";
 import EndFooter from "../Components/EndFooter";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
@@ -32,7 +33,9 @@ const Blog = () => {
                     mattis.
                   </p>
                   <div>
-                    <p>Read More</p>
+                    <p>
+                      <Link to={"/singleblog"}>Read More</Link>
+                    </p>
                   </div>
                 </div>
               </div>

@@ -10,13 +10,13 @@ const ComponentsNav = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-black">
         <div className="container-fluid mx-3">
-          <a className="navbar-brand">
+          <Link to={"/"} className="navbar-brand">
             <img
               src="https://s3-alpha-sig.figma.com/img/a6b0/6f12/3cac62d0f253957fb113cf84d865ae99?Expires=1698624000&Signature=CzxAcn5G-4sOuHWNl0r~ckYG58qr9I0GnmpQq07qEc9du5VuF3erfHbgshVc1crvUypgWmORMwN-9wq5WA-GH34gqbvVcPpWHsbSTvEdiSZJpLPksmKhMOgLx7ZTipSVAHQpmry8~5QKnP~NwZLLJ0MKLXDvOPEZj6Zj7sHOLXQZHnhFBVEQtWAd3y-iiH3nI0UOqYu9Ai6sd~2ag8Jwwnk1n0nyAUIxqw6fmLorfl3pDRh4VTaiGbP77mTpkRceJShw6RjtrZc8uP5-tG4FxIGizWgVzzNfbKvqNSJQDVHkQbO8p4pMkktkUwQ3c79yz6g7bGlZSlJw4Z52b7nCiA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
               alt="logo"
               className="logo1"
             />
-          </a>
+          </Link>
           <button
             className="navbar-toggler text-white"
             type="button"
@@ -31,11 +31,15 @@ const ComponentsNav = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item me-3">
-                <a className="nav-link text-white head1" aria-current="page">
+                <Link
+                  to={"/"}
+                  className="nav-link text-white head1"
+                  aria-current="page"
+                >
                   CAR SERVICES
-                </a>
+                </Link>
               </li>
-              <li className="nav-item dropdown me-3">
+              <li className="nav-item dropdown me-2">
                 <a
                   className="nav-link dropdown-toggle text-white"
                   href="#"
@@ -68,20 +72,8 @@ const ComponentsNav = () => {
                   </li>
                 </ul>
               </li>
-
-              <form className="d-flex" role="search">
-                <input
-                  className="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button className="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
             </ul>
-
+            <input type="text" placeholder="Search..." className="inp" />
             {token ? (
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
