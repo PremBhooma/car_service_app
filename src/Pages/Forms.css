@@ -37,3 +37,16 @@ button {
   background-color: #023d82;
   color: white;
 }
+
+.newtocs {
+  text-align: center;
+}
+
+.newtocs span a {
+  text-decoration: none;
+  color: white;
+}
+
+.newtocs span a:hover {
+  font-weight: 700;
+}

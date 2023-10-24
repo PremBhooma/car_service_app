@@ -160,7 +160,7 @@ const ComponentsNav = () => {
                         setToken(null);
                       }}
                     >
-                      Logout
+                      Customer
                     </Link>
                   </a>
                 </li>
@@ -246,13 +246,6 @@ const ComponentsNav = () => {
                   <a className="nav-link text-white">
                     <Link to={"/login"} className="ach">
                       Login
-                    </Link>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link text-white">
-                    <Link to={"/signup"} className="ach">
-                      Register
                     </Link>
                   </a>
                 </li>

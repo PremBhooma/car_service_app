@@ -1,5 +1,5 @@
 import { React, useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Forms.css";
 import { AuthContext } from "../Routes/AuthContext";
@@ -33,6 +33,7 @@ const Login = () => {
         );
         const data = response.data;
         localStorage.setItem("token", data.token);
+        // console.log(data.token);
         setToken(data.token);
         alert("User Login successfully!");
         navigate("/");
@@ -64,6 +65,13 @@ const Login = () => {
           ) : (
             ""
           )}
+
+          <p className="text-white newtocs">
+            New to Car Service?&nbsp;&nbsp;&nbsp;
+            <span>
+              <Link to={"/signup"}>Register Here</Link>
+            </span>
+          </p>
 
           <button onClick={handleSubmit}>
             {otp ? "Verify OTP" : "Send OTP"}
